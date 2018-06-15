@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="139dp"
+        android:text="Temp" />
+
+    <TextView
+        android:id="@+id/textViewPreasuer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTemp"
+        android:layout_below="@+id/textViewTemp"
+        android:text="Preasure"
+        android:layout_alignLeft="@+id/textViewTemp" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTemp"
+        android:layout_below="@+id/textViewPreasuer"
+        android:text="Location"
+        android:layout_alignLeft="@+id/textViewTemp" />
+
+    <TextView
+        android:id="@+id/textViewGeoLocLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTemp"
+        android:layout_below="@+id/textViewLocationLong"
+        android:text="GeoLoc"
+        android:layout_alignLeft="@+id/textViewTemp" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/a44"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textViewLocationLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTemp"
+        android:layout_below="@+id/textViewLocation"
+        android:text="GeoLong"
+        android:layout_alignLeft="@+id/textViewTemp" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageViewStatus"
+        android:layout_marginStart="60dp"
+        android:text="Description"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewLocation"
+        android:layout_marginEnd="85dp"
+        android:text="Lat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/textViewGeoLocLat"
+        android:text="Long" />
+
+
+</RelativeLayout>

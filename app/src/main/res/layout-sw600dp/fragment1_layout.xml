@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="sun"
+            type="com.example.sebastian.scastro.Sun"/>
+    </data>
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{sun.sunRiseAndAzimuth}"
+        android:id="@+id/textViewSunRise"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSunRise"
+        android:text="@{sun.sunSetAndAzimuth}"
+        android:id="@+id/textViewSunSet"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSunSet"
+        android:text="@{sun.sunTwilightEveningAndMorning}"
+        android:id="@+id/textViewBefore"
+        android:layout_marginTop="40dp"/>
+
+
+
+</RelativeLayout>
+
+</layout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dateTime"
+            type="com.example.sebastian.scastro.DateTime"/>
+    </data>
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastian.scastro.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+    </android.support.v4.view.ViewPager>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test"
+    android:id="@+id/test"/>
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:gravity="bottom"
+        android:text="@{dateTime.dateTime}"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickMenu"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="148dp"
+        android:layout_marginStart="148dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+</layout>
